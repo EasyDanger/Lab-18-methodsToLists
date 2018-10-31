@@ -111,16 +111,16 @@ public class MyArrayList implements MyList {
 			// If our array is out of space, double the size.
 			doubleLength();
 		}
-		Node newNode = (Node) o;
+		String str = (String) o;
 		boolean isTrue = false;
 		if (index == 0) {
-			addAtBeginning(newNode.getData());
+			addAtBeginning(str);
 			isTrue = true;
 		} else if (index > 0 && index < length) {
 			for (int i = length; i > index; i--) {
 				array[i] = array[i - 1];
 			}
-			array[index] = newNode.getData();
+			array[index] = str;
 			length++;
 		} else {
 			return isTrue;
@@ -130,6 +130,15 @@ public class MyArrayList implements MyList {
 	public void printReverse() {
 		for (int i = length; i > 0; i--) {
 			System.out.println(array[i-1]);
+		}
+	}
+	public void removeAll(Object o) {
+		String str = (String) o;
+		for (int i = 0; i < length; i++) {
+			if (get(i).equals(str)) {
+				removeAt(i);
+			i--;
+			}
 		}
 	}
 

@@ -4,7 +4,7 @@ package co.grandcircus.lists;
 public class ListApp {
 
 	public static void main(String[] args) {
-	//	testArrayList();
+		testArrayList();
 		testLinkedList();
 	}
 	
@@ -16,7 +16,8 @@ public class ListApp {
 		list.addAtBeginning("A");
 		list.addAtEnd("C");
 		list.addAtEnd("D");
-		list.insertAt(1, node);
+		list.insertAt(1, "Z");
+		
 	//	list.removeFromEnd();
 		
 		System.out.println(list);
