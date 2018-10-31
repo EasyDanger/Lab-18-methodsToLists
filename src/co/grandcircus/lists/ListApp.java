@@ -10,13 +10,14 @@ public class ListApp {
 	
 	private static void testArrayList() {
 		MyArrayList list = new MyArrayList();
-		Node node = new Node("Z");
 		
 		list.addAtBeginning("B");
 		list.addAtBeginning("A");
 		list.addAtEnd("C");
 		list.addAtEnd("D");
 		list.insertAt(1, "Z");
+		list.addAtBeginning("Z");
+		list.removeAll("Z");
 		
 	//	list.removeFromEnd();
 		

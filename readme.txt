@@ -20,3 +20,8 @@ Version History
 	--method written to remove all instances of an object in a linked list.
 	Known Issues
 	--add method to remove all instances of an object from an array list.
+2.0--10/31/2018--Format fixing.
+	--method written to remove all instances of an object from an array list.
+	--fixed method to insertAt for array list to not use Nodes.
+	known issues
+	--I think that's it!
