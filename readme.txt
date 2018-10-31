@@ -16,3 +16,7 @@ Version History
 	--add method to remove all occurrences of object from both list classes.
 	--testing
 	--code cleanup
+1.2--10/31/2018--Problem Solving Update!
+	--method written to remove all instances of an object in a linked list.
+	Known Issues
+	--add method to remove all instances of an object from an array list.

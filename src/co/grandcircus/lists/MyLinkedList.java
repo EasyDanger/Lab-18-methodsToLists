@@ -118,4 +118,13 @@ public class MyLinkedList implements MyList {
 			System.out.println(getNodeAt(i-1));
 		}
 	}
+	public void removeAll(Object o) {
+		Node node = (Node) o;
+		for (int i = 0; i < length; i++) {
+			if (getNodeAt(i).getData().equals(node.getData())) {
+				removeAt(i);
+			i--;
+			}
+		}
+	}
 }
